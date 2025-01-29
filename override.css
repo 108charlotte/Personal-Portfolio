@@ -1,0 +1,32 @@
+.row:hover, .event:hover {
+    background-color: rgb(227, 227, 227); 
+    transform: scale(1.02);
+    transform-origin: center; 
+    transition: background-color 750ms ease-in-out; 
+}
+
+.row {
+    padding: 10px; 
+}
+
+.hidden {
+    text-decoration: None; 
+    color: black; 
+}
+
+h1, p {
+    padding: 5px; 
+}
+
+.event {
+    display: flex; 
+    gap: 30px; 
+}
+
+.current {
+    color: rgb(180, 74, 210); 
+}
+
+.timeline {
+    padding: 5px; 
+}
