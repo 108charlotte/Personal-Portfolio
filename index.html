@@ -8,62 +8,71 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="override.css">
-
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="projects.html">My Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">About Me</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects.html">My Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Me</a>
-                        </li>
-                    </ul>
+        <header>
+            <a href="index.html" class="logo barlow-regular">Charlotte Woodrum</a>
+            <nav>
+                <a href="index.html" class="active barlow-regular">Home</a>
+                <a href="projects.html" class="barlow-regular">Projects</a>
+                <a href="contact.html" class="barlow-regular">Contact</a>
+            </nav>
+        </header>
+
+        <h1 class="title">Charlotte Woodrum's Personal Portfolio</h1>
+
+        <section class="home">
+            <div class="home-img">
+                <img src="static/cropped-IMG_2426.jpg" alt="A profile image of Charlotte Woodrum">
+            </div>
+            <div class="home-content">
+
+            <h1>Hello, my name is Charlotte!</h1>
+            <h3 class="static typing-text">I'm a <span class="input"></span></h3>
+            <p>I am passionate about programming in general, but specifically building fun and creative projects. Here is an overview of my programming journey: </p>
+        </section>
+
+            <div class="timeline">
+                <div class="event">
+                    <p class="date"><b>6th Grade</b></p>
+                    <p>Joined non-competitive middle school robotics team</p>
+                </div>
+
+                <div class="event">
+                    <p class="date"><b>7th Grade</b></p>
+                    <p>First discovered programming and learned basic javascript and python, robotics team got to world but not competitive (6199D)</p>
+                </div>
+
+                <div class="event">
+                    <p class="date"><b>8th Grade</b></p>
+                    <p>Learned much more javascript through coding elective, robotics team got to worlds (6199E!)</p>
+                </div>
+
+                <div class="event">
+                    <p class="date"><b>9th Grade</b></p>
+                    <p>Joined high school robotics team and began learning more about programming robots</p>
+                </div>
+
+                <div class="event">
+                    <p class="date current"><b>10th Grade (current)</b></p>
+                    <p>Taking APCS A, took CS50, and joined hack club! Getting more involved in robotics team and building my own projects outside of school to deepen my understanding</p>
                 </div>
             </div>
-        </nav>
-        <h1>Charlotte Woodrum's Personal Portfolio</h1>
 
-        <p>Welcome to my personal portfolio website! </p>
-        <p>My name is Charlotte and I am a current high school sophomore! I am passionate about programming in general, but specifically building fun and creative projects. Here is an overview of my programming journey: </p>
-        
-        <div class="timeline">
-            <div class="event">
-                <p class="date"><b>6th Grade</b></p>
-                <p>Joined non-competitive middle school robotics team</p>
-            </div>
-
-            <div class="event">
-                <p class="date"><b>7th Grade</b></p>
-                <p>First discovered programming and learned basic javascript and python, robotics team got to world but not competitive (6199D)</p>
-            </div>
-
-            <div class="event">
-                <p class="date"><b>8th Grade</b></p>
-                <p>Learned much more javascript through coding elective, robotics team got to worlds (6199E!)</p>
-            </div>
-
-            <div class="event">
-                <p class="date"><b>9th Grade</b></p>
-                <p>Joined high school robotics team and began learning more about programming robots</p>
-            </div>
-
-            <div class="event">
-                <p class="date current"><b>10th Grade (current)</b></p>
-                <p>Taking APCS A, took CS50, and joined hack club! Getting more involved in robotics team and building my own projects outside of school to deepen my understanding</p>
-            </div>
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed(".input", {
+                strings: ["coder", "high school sophomore", "notion fanatic", "ghibli megafan"], 
+                typeSpeed: 120, 
+                backSpeed: 110, 
+                loop: true
+            })
+        </script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

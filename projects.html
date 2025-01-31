@@ -7,33 +7,27 @@
     <!-- Bootstrap 5 CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="override.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="projects.html">My Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="projects.html">My Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Me</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <header>
+        <a href="index.html" class="logo barlow-regular">Charlotte Woodrum</a>
+        <nav>
+            <a href="index.html" class="barlow-regular">Home</a>
+            <a href="projects.html" class="active barlow-regular">Projects</a>
+            <a href="contact.html" class="barlow-regular">Contact</a>
+        </nav>
+    </header>
+
+    <section class="projects">
 
     <h1>My Projects</h1>
     <p>Click for a demo! But beware that the python text adventure may take a minute to load</p>
+    
+    </section>
 
         <!-- First Row: Image Left, Text Right -->
         <a class="hidden" href="https://108charlotte.github.io/Notion-Templates-Marketplace/" target="_blank">

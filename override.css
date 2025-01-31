@@ -1,9 +1,14 @@
-.row:hover, .event:hover {
+* {
+    font-family: "Barlow", serif; 
+}
+
+.row:hover {
     background-color: rgb(227, 227, 227); 
     transform: scale(1.02);
     transform-origin: center; 
     transition: background-color 750ms ease-in-out; 
 }
+  
 
 .row {
     padding: 10px; 
@@ -24,9 +29,106 @@ h1, p {
 }
 
 .current {
-    color: rgb(180, 74, 210); 
+    color: mediumslateblue; 
 }
 
 .timeline {
     padding: 5px; 
+}
+
+header {
+    position: fixed; 
+    top: 0px; 
+    left: 0; 
+    width: 100%; 
+    padding: 20px; 
+    background-color: rgb(37, 37, 37); 
+    backdrop-filter: blur(10px); 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    z-index: 100; 
+}
+
+.logo {
+    font-size: 25px; 
+    color: white; 
+    font-weight: 600; 
+    transition: 0.3s ease; 
+    text-decoration: none; 
+}
+
+.logo:hover {
+    color: rgb(163, 163, 163); 
+    transform: scale(1.1); 
+}
+
+nav a {
+    font-size: 18px; 
+    color: white; 
+    font-weight: 500; 
+    text-decoration: none; 
+    cursor: pointer; 
+    position: relative; 
+    margin-left: 20px; 
+}
+
+nav a::after, .logo::after {
+    content: ""; 
+    position: absolute; 
+    left: 0; 
+    bottom: -2.5px;
+    height: 2px; 
+    width: 0%; 
+    background-color: mediumslateblue; 
+    text-shadow: 0 0 25px mediumslateblue, 
+                 0 0 50px mediumslateblue; 
+    border-bottom: 3px solid mediumslateblue; 
+    transition: width .2s ease-in-out; 
+}
+
+nav a:hover:after, .logo:hover:after {
+    width: 100%; 
+}
+
+nav a.active {
+    color: mediumslateblue; 
+    border-bottom: 3px solid mediumslateblue; 
+}
+
+.home-img img {
+    width: 75%; 
+    height: auto; 
+    margin-left: 5%; 
+    overflow: hidden; 
+    border-radius: 50%; 
+}
+
+.home {
+    display: flex; 
+    padding: 20px; 
+}
+
+.contact, .projects {
+    margin-top: 75px; 
+    padding: 20px; 
+}
+
+.info {
+    color: rgb(138, 96, 194); 
+}
+
+.title {
+    margin-top: 75px; 
+    padding: 20px; 
+}
+
+.typing-text {
+    margin-left: 10px; 
+}
+
+.input {
+    background: linear-gradient(to right, #5d50ef, #8f99f4, #57b7c2, #2196f3, #26c6da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
